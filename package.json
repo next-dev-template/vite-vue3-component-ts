@@ -1,0 +1,60 @@
+{
+  "name": "vite-vue3-component-ts",
+  "version": "0.0.1",
+  "main": "./lib/vite-vue3-component-ts.umd.js",
+  "module": "./lib/vite-vue3-component-ts.es.js",
+  "exports": {
+    ".": {
+      "import": "./lib/vite-vue3-component-ts.es.js",
+      "require": "./lib/vite-vue3-component-ts.umd.js"
+    },
+    "./lib/style.css": {
+      "import": "./lib/style.css",
+      "require": "./lib/style.css"
+    }
+  },
+  "types": "./types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/next-dev-template/vite-vue3-component-ts"
+  },
+  "homepage": "https://next-dev-template.github.io/vite-vue3-component-ts",
+  "files": [
+    "lib",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vue-tsc --noEmit && vite build",
+    "preview": "vite build --config vite.config.preview.ts",
+    "prepare": "husky install",
+    "eslint": "eslint src --ext .ts,.js,.vue --fix",
+    "stylelint": "stylelint src/**/*.{vue,css,less,scss} --fix",
+    "lint": "npm run eslint && npm run stylelint",
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "eslint": "^8.15.0",
+    "eslint-config-jammy": "^0.0.9",
+    "husky": "^8.0.1",
+    "less": "^4.1.2",
+    "lint-staged": "^12.4.1",
+    "pkg-get": "^0.0.2",
+    "postcss-html": "^1.4.1",
+    "postcss-less": "^6.0.0",
+    "postcss-scss": "^4.0.4",
+    "standard-version": "^9.3.2",
+    "stylelint": "^14.8.2",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^25.0.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.7",
+    "vue-tsc": "^0.34.7"
+  }
+}
