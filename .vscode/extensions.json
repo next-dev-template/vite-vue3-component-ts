@@ -2,6 +2,11 @@
   "recommendations": [
     "vue.volar",
     "dbaeumer.vscode-eslint",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "editorconfig.editorconfig",
+    "vue.vscode-typescript-vue-plugin",
+    "antfu.unocss",
+    "wangzy.sneak-mark",
+    "eamodio.gitlens"
   ]
 }
