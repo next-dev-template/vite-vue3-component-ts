@@ -11,5 +11,23 @@
     "javascriptreact",
     "typescript",
     "typescriptreact"
-  ]
+  ],
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  }
 }
